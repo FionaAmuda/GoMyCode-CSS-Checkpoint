@@ -1,0 +1,36 @@
+$hoverColor:rgb(48, 202, 219);
+.header{
+    // CSS for elements in the header class
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // CSS for buttons inside the header class
+    button{
+        background-color: $primaryColor;
+        text-align: center;
+        &:hover{
+            background:$hoverColor;
+        }
+    }
+}
+/*
+<header class="header"> 
+
+<button>
+
+
+</button>
+
+</header>
+*/
+@mixin flexCenter($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+// Including the mixin in code
+.container{
+    @include flexCenter(column);
+}
