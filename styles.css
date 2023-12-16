@@ -1,68 +1,88 @@
-*{
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    border: 0;
-    margin: 0;
-    padding: 0;
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
-body{
-   background:whitesmoke;
-   color:black;
+li {
+  list-style: none;
 }
-.wrapper{
-   width: calc(100% - 5em);
-   margin-inline: auto;
+nav a {
+  text-decoration: none;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 100px;
-    position: fixed;
-    top: 0;
-    background-color: brown;
-    width: 100%;
-  }
+body {
+  background: whitesmoke;
+  color: black;
+}
+.wrapper {
+  width: calc(100% - 10em);
+  margin-inline: auto;
+  background: gray;
+  
+  position: relative;
+}
 
-  main{
-   margin-top: 150px;
-  }
-
-  .home{
+/* header */
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100px;
+   background-color: brown;
    position: fixed;
-  }
- .image{
- height: 90%;
- width: 20%;
- margin: auto 1px;
- display: flex;
- align-items: center;
- justify-content: center;
- }
-  .image img{
-   width:auto;
-   height:100%;
-   border-radius:50%;
-   border: 2px solid black
-  }
+   width: calc(100% - 10em);
+   top:0;
+   overflow: hidden;
 
- nav ul li{
-    display: inline;
-    margin: 10px 20px;
- } 
+   }
 
- nav ul li a{
-    text-decoration: none;
-    color:black;
-    font-size: 18px;
-    font-weight: bolder;
-    
- }
- 
-  nav ul li a:hover{
-    color:green;
-  }
+  header div.image {
+      flex:2;
+      display: flex;
+      padding-left:1em;
+      align-items: center;
+      overflow: hidden;
+      height: 100%;
+   }
 
+   div.image img {
+      height: 95%;
+      width: auto;
+      border-radius: 50%;
+      border: 2px black solid;
+   }
+
+   header nav {
+      flex:1;
+
+   }
+   nav ul {
+      width:90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+
+
+
+
+/* main */
+main {
+   margin-top: 100px;
+}
+
+
+/* about sec */
+.col-container {
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.col-container div{
+   flex:1;
+}
 
