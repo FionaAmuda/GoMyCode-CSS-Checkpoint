@@ -23,7 +23,7 @@ header{
     position: fixed;
     top: 0;
     background-color: brown;
-    width: 100%;
+    width: 95%;
   }
 
   main{
@@ -62,7 +62,7 @@ header{
  }
  
   nav ul li a:hover{
-    color:green;
+    color:white;
   }
 
 
